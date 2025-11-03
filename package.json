@@ -1,0 +1,22 @@
+{
+  "name": "ejs-student-starter",
+  "version": "1.0.0",
+  "description": "Student starter: Express + EJS + JSON data (no MongoDB)",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    "lint:ejs": "ejs-lint \"views/**/*.ejs\"",
+    "lint": "npm run lint:ejs"
+  },
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "method-override": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "ejs-lint": "^1.2.2"
+  }
+}

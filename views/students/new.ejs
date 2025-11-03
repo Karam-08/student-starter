@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Student</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <%- include('../partials/header') %>
+  <main class="container">
+    <h2>Add Student</h2>
+    <form method="post" action="/students">
+      <label>First Name<input required name="firstName"></label>
+      <label>Last Name<input required name="lastName"></label>
+      <label>Email<input required type="email" name="email"></label>
+      <label>Cohort
+        <select name="cohort">
+          <option>Year 1</option>
+          <option>Year 2</option>
+        </select>
+      </label>
+      <label>Interests<textarea name="interests" rows="3" placeholder="comma separated"></textarea></label>
+      <button>Add</button>
+    </form>
+  </main>
+  <%- include('../partials/footer') %>
+</body>
+</html>

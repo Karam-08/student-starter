@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= student.firstName %> <%= student.lastName %></title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <%- include('../partials/header') %>
+  <main class="container">
+    <a href="/students">&larr; Back</a>
+    <h2><%= student.firstName %> <%= student.lastName %></h2>
+    <ul class="detail">
+      <li><strong>Email:</strong> <%= student.email %></li>
+      <li><strong>Cohort:</strong> <%= student.cohort %></li>
+      <li><strong>Interests:</strong> <%= student.interests %></li>
+      <li><strong>Created:</strong> <%= new Date(student.createdAt).toLocaleString() %></li>
+    </ul>
+  </main>
+  <%- include('../partials/footer') %>
+</body>
+</html>

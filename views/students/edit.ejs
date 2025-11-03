@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Student</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <%- include('../partials/header') %>
+  <main class="container">
+    <h2>Edit Student</h2>
+    <form method="post" action="/students/<%= student.id %>?_method=PUT">
+      <label>First Name<input required name="firstName" value="<%= student.firstName %>"></label>
+      <label>Last Name<input required name="lastName" value="<%= student.lastName %>"></label>
+      <label>Email<input required type="email" name="email" value="<%= student.email %>"></label>
+      <label>Cohort
+        <select name="cohort">
+          <option <%= student.cohort==='Year 1'?'selected':'' %>>Year 1</option>
+          <option <%= student.cohort==='Year 2'?'selected':'' %>>Year 2</option>
+        </select>
+      </label>
+      <label>Interests<textarea name="interests" rows="3"><%= student.interests %></textarea></label>
+      <button>Save</button>
+    </form>
+  </main>
+  <%- include('../partials/footer') %>
+</body>
+</html>

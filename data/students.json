@@ -1,0 +1,74 @@
+[
+  {
+    "id": "st_1",
+    "firstName": "Alex",
+    "lastName": "Rivera",
+    "email": "alex.rivera@example.com",
+    "cohort": "Year 2",
+    "interests": "python, data, ai",
+    "createdAt": "2025-01-02T12:00:00.000Z"
+  },
+  {
+    "id": "st_2",
+    "firstName": "Jordan",
+    "lastName": "Lee",
+    "email": "jordan.lee@example.com",
+    "cohort": "Year 1",
+    "interests": "web, js, react",
+    "createdAt": "2025-01-03T12:00:00.000Z"
+  },
+  {
+    "id": "st_3",
+    "firstName": "Sam",
+    "lastName": "Nguyen",
+    "email": "sam.nguyen@example.com",
+    "cohort": "Year 2",
+    "interests": "python, data, ai",
+    "createdAt": "2025-01-04T12:00:00.000Z"
+  },
+  {
+    "id": "st_4",
+    "firstName": "Taylor",
+    "lastName": "Patel",
+    "email": "taylor.patel@example.com",
+    "cohort": "Year 1",
+    "interests": "web, js, react",
+    "createdAt": "2025-01-05T12:00:00.000Z"
+  },
+  {
+    "id": "st_5",
+    "firstName": "Morgan",
+    "lastName": "Kim",
+    "email": "morgan.kim@example.com",
+    "cohort": "Year 2",
+    "interests": "python, data, ai",
+    "createdAt": "2025-01-06T12:00:00.000Z"
+  },
+  {
+    "id": "st_6",
+    "firstName": "Jess",
+    "lastName": "Martinez",
+    "email": "jess.martinez@example.com",
+    "cohort": "Year 1",
+    "interests": "web, js, react",
+    "createdAt": "2025-01-07T12:00:00.000Z"
+  },
+  {
+    "id": "st_7",
+    "firstName": "Riley",
+    "lastName": "Chen",
+    "email": "riley.chen@example.com",
+    "cohort": "Year 2",
+    "interests": "python, data, ai",
+    "createdAt": "2025-01-08T12:00:00.000Z"
+  },
+  {
+    "id": "st_8",
+    "firstName": "Avery",
+    "lastName": "Singh",
+    "email": "avery.singh@example.com",
+    "cohort": "Year 1",
+    "interests": "web, js, react",
+    "createdAt": "2025-01-09T12:00:00.000Z"
+  }
+]
