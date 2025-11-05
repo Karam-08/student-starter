@@ -10,7 +10,7 @@
   <%- include('../partials/header') %>
   <main class="container">
     <h2>Edit Student</h2>
-    <form method="post" action="/students/<%= student.id %>?_method=PUT">
+    <form method="post" action="/students/<%= student._id %>?_method=PUT">
       <label>First Name<input required name="firstName" value="<%= student.firstName %>"></label>
       <label>Last Name<input required name="lastName" value="<%= student.lastName %>"></label>
       <label>Email<input required type="email" name="email" value="<%= student.email %>"></label>

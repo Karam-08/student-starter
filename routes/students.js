@@ -38,7 +38,7 @@ router.post('/', async (req, res) => {
 
 // SHOW
 router.get('/:id', async (req, res) => {
-  const student = await Student.findById(req,params.id).lean()
+  const student = await Student.findById(req.params.id).lean()
   if (!student) return res.status(404).send('Not found');
   student.createdAt = student.createdAt || new Date()
   res.render('students/show', { student });
@@ -46,7 +46,7 @@ router.get('/:id', async (req, res) => {
 
 // EDIT — form
 router.get('/:id/edit', async (req, res) => {
-  const student = await Student.findById(req,params.id).lean()
+  const student = await Student.findById(req.params.id).lean()
   if(!student){return res.status(404).send("Not Found")}
   res.render('students/edit', { student:{...student}, id:student._id});
 });
@@ -56,7 +56,7 @@ router.put('/:id', async (req, res) => {
   const {firstName, lastName, email, cohort, interests} = req.body;
   const student = await Student.findByIdAndUpdate(req.params.id, {firstName, lastName, email, cohort, interests}, {new: true})
   if(!student){return res.status(404).send("Not Found")}
-  res.redirect(`/students/${s._id}`);
+  res.redirect(`${student._id}`);
 
   // findByIdandUpdate
   // Mongoose schema functions

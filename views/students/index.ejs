@@ -28,12 +28,12 @@
         <% } %>
         <% students.forEach(function(s){ %>
           <tr>
-            <td><a href="/students/<%= s.id %>"><%= s.firstName %> <%= s.lastName %></a></td>
+            <td><a href="/students/<%= s._id %>"><%= s.firstName %> <%= s.lastName %></a></td>
             <td><%= s.email %></td>
             <td><%= s.cohort %></td>
             <td class="actions">
-              <a href="/students/<%= s.id %>/edit">Edit</a>
-              <form method="post" action="/students/<%= s.id %>?_method=DELETE" onsubmit="return confirm('Delete this student?');">
+              <a href="/students/<%= s._id %>/edit">Edit</a>
+              <form method="post" action="/students/<%= s._id %>?_method=DELETE" onsubmit="return confirm('Delete this student?');">
                 <button>Delete</button>
               </form>
             </td>
