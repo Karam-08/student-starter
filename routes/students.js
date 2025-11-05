@@ -17,9 +17,9 @@ router.get('/', async (req, res) => {
       {emailName:re},
       {interests:re}
     ]
-    if(cohort){q.cohort = cohort}
-    const students = await Student.find(q).sort({createdAt: -1}).lean()
+    if(cohort) q.cohort = cohort
   }
+  const students = await Student.find(q).sort({createdAt: -1}).lean()
   res.render('students/index', { students, search, cohort });
 });
 
